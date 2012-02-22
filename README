@@ -1,0 +1,11 @@
+iptracker v0.1
+
+== beagleip.php
+The website code that gets called from the mobile client to set his ip.
+If called without arguments it displays the last 20 ips as well as a link
+to the last set ip.
+Manages IPs in a sqlite database.
+
+== SET_IP.sh
+Shell-Script that runs on the client and should get called with a cronjob:
+*/1 * * * * /root/SET_IP.sh 2>&1 > /dev/null
